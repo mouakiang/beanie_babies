@@ -28,6 +28,23 @@ window.addEventListener('load', async () => {
     }
 });
 
+buttonEl.addEventListener('click', async () => {
+    const filteredBeanies = await getBeanieBabies(selectEl.value);
+
+    beanieBabiesData = filteredBeanies;
+
+    displayBeanieBabies();
+});
+
+formEl.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const filteredBeanies = await getBeanieBabies(selectEl.value);
+
+    beanieBabiesData = filteredBeanies;
+
+    displayBeanieBabies();
+});
 /* Display Functions */
 function displayBeanieBabies() {
     beanieBabiesEl.textContent = '';
