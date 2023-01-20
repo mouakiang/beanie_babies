@@ -32,4 +32,43 @@ header .logo {
 
 main {
     padding: 20px;
+    background-image: url(../assets/backgroundbb.jpg);
+}
+
+.beanie-babies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beanie-baby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 195, 245);
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 95px;
+}
+
+.beanie-baby img {
+    width: 100px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    color: rgb(158, 16, 223);
+    font-family: monospace;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    color: blue;
 }
